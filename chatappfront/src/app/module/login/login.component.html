@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row vh-100 d-flex justify-content-center align-items-center">
+        <div class="col-md-12">
+
+            <form class="row g-3"  #f="ngForm" (ngSubmit)="submit(f)" ngNativeValidate>
+         
+                <div class="col-md-4 offset-md-4">
+                    <div class="mb-3">
+                  <label for="validationDefaultUsername" class="form-label">Username</label>
+                  <div class="input-group">
+                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                    <input type="text" class="form-control" ngModel #Email="ngModel" name="Email" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+                  </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="validationDefaultpassword" class="form-label">Password</label>
+                    <div class="input-group">
+                      <span class="input-group-text" id="inputGroupPrepend2">*</span>
+         
+                      <input type="password" ngModel #Password="ngModel" name="Password" class="form-control" id="validationDefaultpassword"  aria-describedby="inputGroupPrepend2" required>
+                    </div>
+                </div>
+                    <button class="btn btn-primary" type="submit">Login</button>
+                  </div>
+                  
+        
+              </form>
+        </div>
+    </div>
+</div>

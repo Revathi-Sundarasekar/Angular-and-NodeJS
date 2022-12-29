@@ -1,0 +1,24 @@
+.vh-90{
+  height: 95vh !important;
+}
+
+.overflow-x{
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 992px) {
+  .vh-90{
+    height: 100vh !important;
+  }
+}
+
+.dark-bg{
+  background-color: var(--dark-bg) !important;
+}
+
+.light-bg{
+  background-color: var(--light-bg) !important;
+}
+
+
+
